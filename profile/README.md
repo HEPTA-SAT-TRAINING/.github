@@ -1,46 +1,31 @@
 # HEPTA-SAT
 
 Welcome to the **HEPTA-SAT GitHub repository**.
-Before starting the Labs, please complete the following development environment setup.
+
+This page explains the software setup for the HEPTA-SAT Labs.
 
 ---
 
-# Getting Started
+# Before Starting the Labs
 
-## Required Software
+Please complete the following setup **before starting the HEPTA-SAT Labs**.
 
-The following software is mainly used in the HEPTA-SAT Labs.
+## Required Setup
 
-| Software       | Purpose                                             |
-| -------------- | --------------------------------------------------- |
-| Arduino IDE    | Writing and uploading programs to the HEPTA-SAT OBC |
-| GitHub Desktop | Downloading and managing HEPTA-SAT Lab repositories |
+- [ ] Install Arduino IDE
+- [ ] Install the Raspberry Pi Pico/RP2040/RP2350 board package
+- [ ] Confirm that `Generic Raspberry Pi Pico 2` can be selected
 
-> [!NOTE]
-> XCTU and Autodesk Fusion are introduced later as **Additional Contents**.
-> They are not required for the initial setup.
+> [!IMPORTANT]
+> Before starting the Labs, you only need to complete the **Arduino IDE and HEPTA-SAT OBC board setup**.
+>
+> Other software can be installed later when needed.
 
 ---
 
 # 1. Install Arduino IDE
 
-## What is Arduino IDE?
-
-**Arduino IDE** is the development environment used to write, compile, and upload programs to the HEPTA-SAT OBC.
-
-In the HEPTA-SAT Labs, Arduino IDE is used to:
-
-* Write programs for the OBC
-* Compile programs
-* Upload programs to the OBC
-* Check data using the Serial Monitor
-
-
----
-
-## Step 1: Download Arduino IDE
-
-Download Arduino IDE from the official Arduino website.
+Arduino IDE is used to write and upload programs to the HEPTA-SAT OBC.
 
 **[Download Arduino IDE](https://www.arduino.cc/en/software)**
 
@@ -48,313 +33,106 @@ Download Arduino IDE from the official Arduino website.
 
 # 2. Configure the HEPTA-SAT OBC Board
 
-Installing Arduino IDE alone is not enough to upload programs to the HEPTA-SAT OBC.
+Open Arduino IDE and go to:
 
-You also need to install the board package for the microcontroller used in HEPTA-SAT.
+`File → Preferences`
 
----
-
-## Step 1: Add the Boards Manager URL
-
-Open Arduino IDE.
-
-Go to:
-
-```text
-File → Preferences
-```
-
-Find:
-
-```text
-Additional Boards Manager URLs
-```
-
-and add the following URL:
+Add the following URL to **Additional Boards Manager URLs**:
 
 ```text
 https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
 ```
 
 > [!TIP]
-> If another URL is already registered, do not delete it.
-> Add this URL as a new entry.
+> If another URL is already registered, add this URL as a new entry without deleting the existing one.
 
----
+Next, open **Boards Manager** and search for:
 
-## Step 2: Install the Board Package
-
-Open **Boards Manager** from the left-side menu in Arduino IDE.
-
-Search for:
-
-```text
-pico
-```
+`pico`
 
 Install:
 
-```text
-Raspberry Pi Pico/RP2040/RP2350
-```
+`Raspberry Pi Pico/RP2040/RP2350`
 
+After installation, select:
 
-After installation, Arduino IDE will support Raspberry Pi Pico and Pico 2 series boards.
+`Tools → Board → Generic Raspberry Pi Pico 2`
 
----
-
-## Step 3: Select the HEPTA-SAT Board
-
-Go to:
-
-```text
-Tools → Board
-```
-
-and select the board used for HEPTA-SAT.
-
-For example:
-
-```text
-Generic Raspberry Pi Pico 2
-```
-
-
-
-Before starting a Lab, make sure that the correct board is selected.
+Your basic HEPTA-SAT development environment is now ready.
 
 ---
 
-# 3. Download the HEPTA-SAT Lab Programs
+# Lab Programs
 
-Programs used in each HEPTA-SAT Lab are provided through GitHub repositories.
+Programs used in each HEPTA-SAT Lab are available in the GitHub repositories.
 
-There are two main ways to obtain the programs:
+To download a Lab program, open the repository and select:
 
-1. Download the repository as a ZIP file
-2. Clone the repository using GitHub Desktop
+`Code → Download ZIP`
 
----
-
-# 4. Method 1: Download as ZIP
-
-This is the simplest method if you are new to GitHub.
-
-Open the repository for the Lab you want to use.
-
-Click:
-
-```text
-Code
-```
-
-and then:
-
-```text
-Download ZIP
-```
-
-
-After downloading:
-
-1. Extract the ZIP file.
-2. Open the extracted folder.
-3. Find the Arduino `.ino` file.
-4. Open the `.ino` file using Arduino IDE.
-
-```text
-GitHub Repository
-        ↓
-       Code
-        ↓
-   Download ZIP
-        ↓
-    Extract ZIP
-        ↓
- Open the .ino file
-        ↓
-    Arduino IDE
-```
+You can also use **GitHub Desktop** to clone and manage the repositories.
 
 ---
 
-# 5. Method 2: GitHub Desktop
+# Software Used When Needed
 
-## What is GitHub Desktop?
+The following software **does not need to be installed before starting the Labs**.
 
-**GitHub Desktop** is an application that allows you to work with GitHub repositories using a graphical interface.
+Install it when instructed in the relevant Lab or Additional Content.
 
-It allows you to perform Git operations without using command-line commands.
-
-For example:
-
-* Clone repositories
-* Check file changes
-* Commit changes
-* Push changes
-* Pull updates
-
+| Software | Used for |
+| --- | --- |
+| GitHub Desktop | Managing GitHub repositories |
+| XCTU | XBee wireless communication |
+| Autodesk Fusion | Structural design and 3D modeling |
 
 ---
 
-## Step 1: Install GitHub Desktop
+## GitHub Desktop
 
-Download GitHub Desktop from the official website.
+GitHub Desktop is useful for cloning and managing HEPTA-SAT repositories.
 
-👉 **[Download GitHub Desktop](https://desktop.github.com/download/)**
+**[Download GitHub Desktop](https://desktop.github.com/download/)**
 
-Install the application and launch GitHub Desktop.
-
----
-
-## Step 2: Clone a HEPTA-SAT Repository
-
-Open the HEPTA-SAT Lab repository you want to use.
-
-Click:
-
-```text
-Code
-```
-
-and then:
-
-```text
-Open with GitHub Desktop
-```
-
-
-
-GitHub Desktop will open.
-
-Select the folder where you want to save the repository and click:
-
-```text
-Clone
-```
-
-The repository is now stored on your computer.
-
-```text
-HEPTA-SAT GitHub
-        ↓
-       Code
-        ↓
-Open with GitHub Desktop
-        ↓
-      Clone
-        ↓
-   Local Folder
-```
-
-Using GitHub Desktop also makes it easier to retrieve updates when the HEPTA-SAT repository is updated.
+It will be introduced when GitHub operations are needed.
 
 ---
 
-# 6. Initial Setup Checklist
+## XCTU
 
-Before starting the HEPTA-SAT Labs, make sure that the following setup has been completed.
+XCTU is used to configure and test **XBee wireless communication modules**.
 
-* [ ] Arduino IDE is installed
-* [ ] The Boards Manager URL has been added
-* [ ] Raspberry Pi Pico/RP2040/RP2350 Board Package is installed
-* [ ] The HEPTA-SAT OBC board can be selected
-* [ ] HEPTA-SAT Lab repositories can be downloaded
-* [ ] GitHub Desktop is installed
+**[Download Digi XCTU](https://www.digi.com/products/embedded-systems/digi-xbee/digi-xbee-tools/xctu)**
 
-Once these steps are complete, your basic HEPTA-SAT development environment is ready.
+It will be introduced in the communication-related activities.
 
 ---
 
-# Additional Contents
+## Autodesk Fusion
 
-The following software is used for additional activities such as wireless communication and structural design.
+Autodesk Fusion is used for **3D modeling and structural design**.
 
-These applications are **not required for the initial setup**.
+**[Autodesk Fusion Free Trial](https://www.autodesk.com/products/fusion-360/free-trial)**
 
----
+Eligible students and educators can also use the Autodesk Education program:
 
-# A. XCTU
+**[Autodesk Fusion for Students and Educators](https://www.autodesk.com/education/edu-software/fusion)**
 
-## What is XCTU?
-
-**XCTU** is software provided by Digi for configuring and testing XBee wireless communication modules.
-
-HEPTA-SAT uses XBee modules for wireless communication activities.
-
-XCTU can be used to:
-
-* Detect XBee modules
-* Check XBee settings
-* Configure communication parameters
-* Test communication between XBee modules
-* Monitor transmitted and received data
-
-### Download
-
-👉 **[Download Digi XCTU](https://www.digi.com/products/embedded-systems/digi-xbee/digi-xbee-tools/xctu)**
-
-Detailed instructions for using XCTU are provided in the communication-related Lab or Additional Content.
+It will be introduced in the structural-design-related activities.
 
 ---
 
-# B. Autodesk Fusion
+# Setup Summary
 
-## What is Autodesk Fusion?
+| Software | When to Install |
+| --- | --- |
+| **Arduino IDE** | **Before starting the Labs** |
+| **Pico Board Package** | **Before starting the Labs** |
+| GitHub Desktop | When needed |
+| XCTU | When needed |
+| Autodesk Fusion | When needed |
 
-**Autodesk Fusion** is CAD software used for 3D modeling and mechanical design.
-
-In HEPTA-SAT, Fusion can be used for activities such as:
-
-* Viewing the HEPTA-SAT structure
-* Checking 3D models of structural components
-* Considering mission component placement
-* Designing original structural parts
-
-
-### Free Trial
-
-👉 **[Autodesk Fusion Free Trial](https://www.autodesk.com/products/fusion-360/free-trial)**
-
-### Students and Educators
-
-Eligible students and educators may also use Autodesk Fusion through the Autodesk Education program.
-
-👉 **[Autodesk Fusion for Students and Educators](https://www.autodesk.com/education/edu-software/fusion)**
-
-Detailed instructions for using Fusion are provided in the structural-design-related Additional Content.
-
----
-
-# Repository Structure
-
-An example repository structure is shown below.
-
-```text
-HEPTA-SAT/
-│
-├── README.md
-│
-├── docs/
-│   └── images/
-│       └── setup/
-│           ├── arduino-ide-overview.png
-│           ├── arduino-download.png
-│           ├── arduino-preferences.png
-│           ├── board-manager-pico.png
-│           ├── select-board.png
-│           ├── github-download-zip.png
-│           ├── github-desktop-overview.png
-│           ├── github-open-desktop.png
-│           ├── github-clone.png
-│           ├── xctu-overview.png
-│           └── fusion-overview.png
-│
-├── Lab1/
-├── Lab2/
-├── Lab3/
-├── Lab4/
-├── Lab5/
-├── Lab6/
-└── Additional-Contents/
-```
+> [!IMPORTANT]
+> **Before the Labs:** Set up Arduino IDE and the HEPTA-SAT OBC board.
+>
+> **During the Labs:** Install other software only when it is needed.

@@ -1,20 +1,6 @@
 # HEPTA-SAT
 
 Welcome to the **HEPTA-SAT GitHub repository**.
-
-This repository provides programs and related files used in the HEPTA-SAT hands-on CubeSat training program.
-
-Through the HEPTA-SAT Labs, you will progressively learn and experience topics such as:
-
-* OBC (On-Board Computer) programming
-* Electrical Power System
-* Sensors and data handling
-* Data storage
-* Wireless communication
-* Satellite assembly
-* System integration
-* Mission design
-
 Before starting the Labs, please complete the following development environment setup.
 
 ---
@@ -56,22 +42,7 @@ In the HEPTA-SAT Labs, Arduino IDE is used to:
 
 Download Arduino IDE from the official Arduino website.
 
-👉 **[Download Arduino IDE](https://www.arduino.cc/en/software)**
-
-Select the installer that matches your operating system.
-
-### Windows
-
-Download the Windows installer and follow the instructions on the screen.
-
-### macOS
-
-Download the macOS version and move Arduino IDE to the **Applications** folder.
-
-### Linux
-
-Download the appropriate package for your Linux environment.
-
+**[Download Arduino IDE](https://www.arduino.cc/en/software)**
 
 ---
 

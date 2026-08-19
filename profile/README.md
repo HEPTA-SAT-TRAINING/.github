@@ -59,12 +59,12 @@ https://github.com/earlephilhower/arduino-pico/releases/download/global/package_
 <img src="https://github.com/user-attachments/assets/952b3022-a00f-4255-96e2-0563ee58a55c" alt="HEPTA-SAT" width="70" align="middle">
 </h1>
 
-<p>
+<h3>
   <strong>
     * The following software is not required before the training.<br>
     * Install it when needed.
   </strong>
-</p>
+</h3>
 
 ### XCTU
 

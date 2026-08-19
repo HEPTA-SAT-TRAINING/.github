@@ -19,12 +19,6 @@ Through this program, you will become a space engineer.
 
 
 
-<h2 align="center">
-  The more people build satellites, the closer space becomes.<br>
-  Through this program, you will become a space engineer.
- 
-</h2>
-
 
 
 <h1>
